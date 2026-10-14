@@ -1,1 +1,2 @@
-# Illion-Idle
+# Beyond Infinity
+An Incremental Journey
