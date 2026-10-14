@@ -1,0 +1,946 @@
+[
+  {
+    "id": "thousand",
+    "name": "Thousand",
+    "shortcut": "k",
+    "exponent": 3,
+    "display": "10^3",
+    "value": 1000.0
+  },
+  {
+    "id": "million",
+    "name": "Million",
+    "shortcut": "M",
+    "exponent": 6,
+    "display": "10^6",
+    "value": 1000000.0
+  },
+  {
+    "id": "billion",
+    "name": "Billion",
+    "shortcut": "B",
+    "exponent": 9,
+    "display": "10^9",
+    "value": 1000000000.0
+  },
+  {
+    "id": "trillion",
+    "name": "Trillion",
+    "shortcut": "T",
+    "exponent": 12,
+    "display": "10^12",
+    "value": 1000000000000.0
+  },
+  {
+    "id": "quadrillion",
+    "name": "Quadrillion",
+    "shortcut": "Qd",
+    "exponent": 15,
+    "display": "10^15",
+    "value": 1000000000000000.0
+  },
+  {
+    "id": "quintillion",
+    "name": "Quintillion",
+    "shortcut": "Qn",
+    "exponent": 18,
+    "display": "10^18",
+    "value": 1e+18
+  },
+  {
+    "id": "sextillion",
+    "name": "Sextillion",
+    "shortcut": "Sx",
+    "exponent": 21,
+    "display": "10^21",
+    "value": 1e+21
+  },
+  {
+    "id": "septillion",
+    "name": "Septillion",
+    "shortcut": "Sp",
+    "exponent": 24,
+    "display": "10^24",
+    "value": 1e+24
+  },
+  {
+    "id": "octillion",
+    "name": "Octillion",
+    "shortcut": "Oc",
+    "exponent": 27,
+    "display": "10^27",
+    "value": 1e+27
+  },
+  {
+    "id": "nonillion",
+    "name": "Nonillion",
+    "shortcut": "No",
+    "exponent": 30,
+    "display": "10^30",
+    "value": 1e+30
+  },
+  {
+    "id": "decillion",
+    "name": "Decillion",
+    "shortcut": "De",
+    "exponent": 33,
+    "display": "10^33",
+    "value": 1e+33
+  },
+  {
+    "id": "undecillion",
+    "name": "Undecillion",
+    "shortcut": "UDe",
+    "exponent": 36,
+    "display": "10^36",
+    "value": 1e+36
+  },
+  {
+    "id": "duodecillion",
+    "name": "Duodecillion",
+    "shortcut": "DDe",
+    "exponent": 39,
+    "display": "10^39",
+    "value": 1e+39
+  },
+  {
+    "id": "tredecillion",
+    "name": "Tredecillion",
+    "shortcut": "TDe",
+    "exponent": 42,
+    "display": "10^42",
+    "value": 1e+42
+  },
+  {
+    "id": "quattuordecillion",
+    "name": "Quattuordecillion",
+    "shortcut": "QdDe",
+    "exponent": 45,
+    "display": "10^45",
+    "value": 1e+45
+  },
+  {
+    "id": "quindecillion",
+    "name": "Quindecillion",
+    "shortcut": "QnDe",
+    "exponent": 48,
+    "display": "10^48",
+    "value": 1e+48
+  },
+  {
+    "id": "sexdecillion",
+    "name": "Sexdecillion",
+    "shortcut": "SxDe",
+    "exponent": 51,
+    "display": "10^51",
+    "value": 1e+51
+  },
+  {
+    "id": "septendecillion",
+    "name": "Septendecillion",
+    "shortcut": "SpDe",
+    "exponent": 54,
+    "display": "10^54",
+    "value": 1e+54
+  },
+  {
+    "id": "octodecillion",
+    "name": "Octodecillion",
+    "shortcut": "OcDe",
+    "exponent": 57,
+    "display": "10^57",
+    "value": 1e+57
+  },
+  {
+    "id": "novemdecillion",
+    "name": "Novemdecillion",
+    "shortcut": "NoDe",
+    "exponent": 60,
+    "display": "10^60",
+    "value": 1e+60
+  },
+  {
+    "id": "vigintillion",
+    "name": "Vigintillion",
+    "shortcut": "Vt",
+    "exponent": 63,
+    "display": "10^63",
+    "value": 1e+63
+  },
+  {
+    "id": "unvigintillion",
+    "name": "Unvigintillion",
+    "shortcut": "UVt",
+    "exponent": 66,
+    "display": "10^66",
+    "value": 1e+66
+  },
+  {
+    "id": "duovigintillion",
+    "name": "Duovigintillion",
+    "shortcut": "DVt",
+    "exponent": 69,
+    "display": "10^69",
+    "value": 1e+69
+  },
+  {
+    "id": "trevigintillion",
+    "name": "Trevigintillion",
+    "shortcut": "TVt",
+    "exponent": 72,
+    "display": "10^72",
+    "value": 1e+72
+  },
+  {
+    "id": "quattuorvigintillion",
+    "name": "Quattuorvigintillion",
+    "shortcut": "QdVt",
+    "exponent": 75,
+    "display": "10^75",
+    "value": 1e+75
+  },
+  {
+    "id": "quinvigintillion",
+    "name": "Quinvigintillion",
+    "shortcut": "QnVt",
+    "exponent": 78,
+    "display": "10^78",
+    "value": 1e+78
+  },
+  {
+    "id": "sexvigintillion",
+    "name": "Sexvigintillion",
+    "shortcut": "SxVt",
+    "exponent": 81,
+    "display": "10^81",
+    "value": 1e+81
+  },
+  {
+    "id": "septemvigintillion",
+    "name": "Septemvigintillion",
+    "shortcut": "SpVt",
+    "exponent": 84,
+    "display": "10^84",
+    "value": 1e+84
+  },
+  {
+    "id": "octovigintillion",
+    "name": "Octovigintillion",
+    "shortcut": "OcVt",
+    "exponent": 87,
+    "display": "10^87",
+    "value": 1e+87
+  },
+  {
+    "id": "novemvigintillion",
+    "name": "Novemvigintillion",
+    "shortcut": "NoVt",
+    "exponent": 90,
+    "display": "10^90",
+    "value": 1e+90
+  },
+  {
+    "id": "trigintillion",
+    "name": "Trigintillion",
+    "shortcut": "Tg",
+    "exponent": 93,
+    "display": "10^93",
+    "value": 1e+93
+  },
+  {
+    "id": "untrigintillion",
+    "name": "Untrigintillion",
+    "shortcut": "UTg",
+    "exponent": 96,
+    "display": "10^96",
+    "value": 1e+96
+  },
+  {
+    "id": "duotrigintillion",
+    "name": "Duotrigintillion",
+    "shortcut": "DTg",
+    "exponent": 99,
+    "display": "10^99",
+    "value": 1e+99
+  },
+  {
+    "id": "tretrigintillion",
+    "name": "Tretrigintillion",
+    "shortcut": "TTg",
+    "exponent": 102,
+    "display": "10^102",
+    "value": 1e+102
+  },
+  {
+    "id": "quattuortrigintillion",
+    "name": "Quattuortrigintillion",
+    "shortcut": "QdTg",
+    "exponent": 105,
+    "display": "10^105",
+    "value": 1e+105
+  },
+  {
+    "id": "quintrigintillion",
+    "name": "Quintrigintillion",
+    "shortcut": "QnTg",
+    "exponent": 108,
+    "display": "10^108",
+    "value": 1e+108
+  },
+  {
+    "id": "sextrigintillion",
+    "name": "Sextrigintillion",
+    "shortcut": "SxTg",
+    "exponent": 111,
+    "display": "10^111",
+    "value": 1e+111
+  },
+  {
+    "id": "septentrigintillion",
+    "name": "Septentrigintillion",
+    "shortcut": "SpTg",
+    "exponent": 114,
+    "display": "10^114",
+    "value": 1e+114
+  },
+  {
+    "id": "octotrigintillion",
+    "name": "Octotrigintillion",
+    "shortcut": "OcTg",
+    "exponent": 117,
+    "display": "10^117",
+    "value": 1e+117
+  },
+  {
+    "id": "novemtrigintillion",
+    "name": "Novemtrigintillion",
+    "shortcut": "NoTg",
+    "exponent": 120,
+    "display": "10^120",
+    "value": 1e+120
+  },
+  {
+    "id": "quadragintillion",
+    "name": "Quadragintillion",
+    "shortcut": "qg",
+    "exponent": 123,
+    "display": "10^123",
+    "value": 1e+123
+  },
+  {
+    "id": "unquadragintillion",
+    "name": "Unquadragintillion",
+    "shortcut": "Uqg",
+    "exponent": 126,
+    "display": "10^126",
+    "value": 1e+126
+  },
+  {
+    "id": "duoquadragintillion",
+    "name": "Duoquadragintillion",
+    "shortcut": "Dqg",
+    "exponent": 129,
+    "display": "10^129",
+    "value": 1e+129
+  },
+  {
+    "id": "tresquadragintillion",
+    "name": "Tresquadragintillion",
+    "shortcut": "Tqg",
+    "exponent": 132,
+    "display": "10^132",
+    "value": 1e+132
+  },
+  {
+    "id": "quattuorquadragintillion",
+    "name": "Quattuorquadragintillion",
+    "shortcut": "Qdqg",
+    "exponent": 135,
+    "display": "10^135",
+    "value": 1e+135
+  },
+  {
+    "id": "quinquadragintillion",
+    "name": "Quinquadragintillion",
+    "shortcut": "Qnqg",
+    "exponent": 138,
+    "display": "10^138",
+    "value": 1e+138
+  },
+  {
+    "id": "sexquadragintillion",
+    "name": "Sexquadragintillion",
+    "shortcut": "Sxqg",
+    "exponent": 141,
+    "display": "10^141",
+    "value": 1e+141
+  },
+  {
+    "id": "septenquadragintillion",
+    "name": "Septenquadragintillion",
+    "shortcut": "Spqg",
+    "exponent": 144,
+    "display": "10^144",
+    "value": 1e+144
+  },
+  {
+    "id": "octoquadragintillion",
+    "name": "Octoquadragintillion",
+    "shortcut": "Ocqg",
+    "exponent": 147,
+    "display": "10^147",
+    "value": 1e+147
+  },
+  {
+    "id": "novemquadragintillion",
+    "name": "Novemquadragintillion",
+    "shortcut": "Noqg",
+    "exponent": 150,
+    "display": "10^150",
+    "value": 1e+150
+  },
+  {
+    "id": "quinquagintillion",
+    "name": "Quinquagintillion",
+    "shortcut": "Qg",
+    "exponent": 153,
+    "display": "10^153",
+    "value": 1e+153
+  },
+  {
+    "id": "unquinquagintillion",
+    "name": "Unquinquagintillion",
+    "shortcut": "UQg",
+    "exponent": 156,
+    "display": "10^156",
+    "value": 1e+156
+  },
+  {
+    "id": "duoquinquagintillion",
+    "name": "Duoquinquagintillion",
+    "shortcut": "DQg",
+    "exponent": 159,
+    "display": "10^159",
+    "value": 1e+159
+  },
+  {
+    "id": "trequinquagintillion",
+    "name": "Trequinquagintillion",
+    "shortcut": "TQg",
+    "exponent": 162,
+    "display": "10^162",
+    "value": 1e+162
+  },
+  {
+    "id": "quattuorquinquagintillion",
+    "name": "Quattuorquinquagintillion",
+    "shortcut": "QdQg",
+    "exponent": 165,
+    "display": "10^165",
+    "value": 1e+165
+  },
+  {
+    "id": "quinquinquagintillion",
+    "name": "Quinquinquagintillion",
+    "shortcut": "QnQg",
+    "exponent": 168,
+    "display": "10^168",
+    "value": 1e+168
+  },
+  {
+    "id": "sexquinquagintillion",
+    "name": "Sexquinquagintillion",
+    "shortcut": "SxQg",
+    "exponent": 171,
+    "display": "10^171",
+    "value": 1e+171
+  },
+  {
+    "id": "septenquinquagintillion",
+    "name": "Septenquinquagintillion",
+    "shortcut": "SpQg",
+    "exponent": 174,
+    "display": "10^174",
+    "value": 1e+174
+  },
+  {
+    "id": "octoquinquagintillion",
+    "name": "Octoquinquagintillion",
+    "shortcut": "OcQg",
+    "exponent": 177,
+    "display": "10^177",
+    "value": 1e+177
+  },
+  {
+    "id": "novemquinquagintillion",
+    "name": "Novemquinquagintillion",
+    "shortcut": "NoQg",
+    "exponent": 180,
+    "display": "10^180",
+    "value": 1e+180
+  },
+  {
+    "id": "sexagintillion",
+    "name": "Sexagintillion",
+    "shortcut": "sg",
+    "exponent": 183,
+    "display": "10^183",
+    "value": 1e+183
+  },
+  {
+    "id": "unsexagintillion",
+    "name": "Unsexagintillion",
+    "shortcut": "Usg",
+    "exponent": 186,
+    "display": "10^186",
+    "value": 1e+186
+  },
+  {
+    "id": "duosexagintillion",
+    "name": "Duosexagintillion",
+    "shortcut": "Dsg",
+    "exponent": 189,
+    "display": "10^189",
+    "value": 1e+189
+  },
+  {
+    "id": "tresexagintillion",
+    "name": "Tresexagintillion",
+    "shortcut": "Tsg",
+    "exponent": 192,
+    "display": "10^192",
+    "value": 1e+192
+  },
+  {
+    "id": "quattuorsexagintillion",
+    "name": "Quattuorsexagintillion",
+    "shortcut": "Qdsg",
+    "exponent": 195,
+    "display": "10^195",
+    "value": 1e+195
+  },
+  {
+    "id": "quinsexagintillion",
+    "name": "Quinsexagintillion",
+    "shortcut": "Qnsg",
+    "exponent": 198,
+    "display": "10^198",
+    "value": 1e+198
+  },
+  {
+    "id": "sexsexagintillion",
+    "name": "Sexsexagintillion",
+    "shortcut": "Sxsg",
+    "exponent": 201,
+    "display": "10^201",
+    "value": 1e+201
+  },
+  {
+    "id": "septensexagintillion",
+    "name": "Septensexagintillion",
+    "shortcut": "Spsg",
+    "exponent": 204,
+    "display": "10^204",
+    "value": 1e+204
+  },
+  {
+    "id": "octosexagintillion",
+    "name": "Octosexagintillion",
+    "shortcut": "Ocsg",
+    "exponent": 207,
+    "display": "10^207",
+    "value": 1e+207
+  },
+  {
+    "id": "novemsexagintillion",
+    "name": "Novemsexagintillion",
+    "shortcut": "Nosg",
+    "exponent": 210,
+    "display": "10^210",
+    "value": 1.0000000000000001e+210
+  },
+  {
+    "id": "octogintillion",
+    "name": "Octogintillion",
+    "shortcut": "Og",
+    "exponent": 243,
+    "display": "10^243",
+    "value": 1e+243
+  },
+  {
+    "id": "nonagintillion",
+    "name": "Nonagintillion",
+    "shortcut": "Ng",
+    "exponent": 273,
+    "display": "10^273",
+    "value": 1e+273
+  },
+  {
+    "id": "centillion",
+    "name": "Centillion",
+    "shortcut": "Ce",
+    "exponent": 303,
+    "display": "10^303",
+    "value": 1e+303
+  },
+  {
+    "id": "ducentillion",
+    "name": "Ducentillion",
+    "shortcut": "Du",
+    "exponent": 603,
+    "display": "10^603",
+    "value": 1e+603
+  },
+  {
+    "id": "trecentillion",
+    "name": "Trecentillion",
+    "shortcut": "Tr",
+    "exponent": 903,
+    "display": "10^903",
+    "value": 1e+903
+  },
+  {
+    "id": "quadringentillion",
+    "name": "Quadringentillion",
+    "shortcut": "Qa",
+    "exponent": 1203,
+    "display": "10^1203",
+    "value": 1e+1203
+  },
+  {
+    "id": "quingentillion",
+    "name": "Quingentillion",
+    "shortcut": "Qi",
+    "exponent": 1503,
+    "display": "10^1503",
+    "value": 1e+1503
+  },
+  {
+    "id": "sescentillion",
+    "name": "Sescentillion",
+    "shortcut": "Se",
+    "exponent": 1803,
+    "display": "10^1803",
+    "value": 1e+1803
+  },
+  {
+    "id": "septingentillion",
+    "name": "Septingentillion",
+    "shortcut": "Si",
+    "exponent": 2103,
+    "display": "10^2103",
+    "value": 1e+2103
+  },
+  {
+    "id": "octingentillion",
+    "name": "Octingentillion",
+    "shortcut": "Ot",
+    "exponent": 2403,
+    "display": "10^2403",
+    "value": 1e+2403
+  },
+  {
+    "id": "nongentillion",
+    "name": "Nongentillion",
+    "shortcut": "Ni",
+    "exponent": 2703,
+    "display": "10^2703",
+    "value": 1e+2703
+  },
+  {
+    "id": "millilion",
+    "name": "Millilion",
+    "shortcut": "Mi",
+    "exponent": 3003,
+    "display": "10^3003",
+    "value": 1e+3003
+  },
+  {
+    "id": "duminillion",
+    "name": "Duminillion",
+    "shortcut": "DMi",
+    "exponent": 6003,
+    "display": "10^6003",
+    "value": 1e+6003
+  },
+  {
+    "id": "triminillion",
+    "name": "Triminillion",
+    "shortcut": "TMi",
+    "exponent": 9003,
+    "display": "10^9003",
+    "value": 1e+9003
+  },
+  {
+    "id": "quadrimillilion",
+    "name": "Quadrimillilion",
+    "shortcut": "QdMi",
+    "exponent": 12003,
+    "display": "10^12003",
+    "value": 1e+12003
+  },
+  {
+    "id": "quinmillillion",
+    "name": "Quinmillillion",
+    "shortcut": "QnMi",
+    "exponent": 15003,
+    "display": "10^15003",
+    "value": 1e+15003
+  },
+  {
+    "id": "sexmillillion",
+    "name": "Sexmillillion",
+    "shortcut": "SxMi",
+    "exponent": 18003,
+    "display": "10^18003",
+    "value": 1e+18003
+  },
+  {
+    "id": "septimillillion",
+    "name": "Septimillillion",
+    "shortcut": "SpMi",
+    "exponent": 21003,
+    "display": "10^21003",
+    "value": 1e+21003
+  },
+  {
+    "id": "octimillillion",
+    "name": "Octimillillion",
+    "shortcut": "OcMi",
+    "exponent": 24003,
+    "display": "10^24003",
+    "value": 1e+24003
+  },
+  {
+    "id": "nonmillillion",
+    "name": "Nonmillillion",
+    "shortcut": "NoMi",
+    "exponent": 27003,
+    "display": "10^27003",
+    "value": 1e+27003
+  },
+  {
+    "id": "decimillillion",
+    "name": "Decimillillion",
+    "shortcut": "DeMi",
+    "exponent": 30003,
+    "display": "10^30003",
+    "value": 1e+30003
+  },
+  {
+    "id": "vigintimillillion",
+    "name": "Vigintimillillion",
+    "shortcut": "VtMi",
+    "exponent": 60003,
+    "display": "10^60003",
+    "value": 1e+60003
+  },
+  {
+    "id": "trevigitimillisexaquadragintaoctingentillion-yes-thats-the-number",
+    "name": "Trevigitimillisexaquadragintaoctingentillion (Yes, thats the number.)",
+    "shortcut": "TVtMiSxqgOt",
+    "exponent": 71543,
+    "display": "10^71543",
+    "value": 1e+71543
+  },
+  {
+    "id": "trigintamillillion",
+    "name": "Trigintamillillion",
+    "shortcut": "TgMi",
+    "exponent": 90003,
+    "display": "10^90003",
+    "value": 1e+90003
+  },
+  {
+    "id": "quadragintamillillion",
+    "name": "Quadragintamillillion",
+    "shortcut": "qgMi",
+    "exponent": 120003,
+    "display": "10^120003",
+    "value": 1e+120003
+  },
+  {
+    "id": "quinquagintamillillion",
+    "name": "Quinquagintamillillion",
+    "shortcut": "QgMi",
+    "exponent": 150003,
+    "display": "10^150003",
+    "value": 1e+150003
+  },
+  {
+    "id": "sexagintamillillion",
+    "name": "Sexagintamillillion",
+    "shortcut": "sgMi",
+    "exponent": 180003,
+    "display": "10^180003",
+    "value": 1e+180003
+  },
+  {
+    "id": "septuagintamillillion",
+    "name": "Septuagintamillillion",
+    "shortcut": "SgMi",
+    "exponent": 210003,
+    "display": "10^210003",
+    "value": 1e+210003
+  },
+  {
+    "id": "octogintamillillion",
+    "name": "Octogintamillillion",
+    "shortcut": "OgMi",
+    "exponent": 240003,
+    "display": "10^240003",
+    "value": 1e+240003
+  },
+  {
+    "id": "nonagintamillillion",
+    "name": "Nonagintamillillion",
+    "shortcut": "NgMi",
+    "exponent": 270003,
+    "display": "10^270003",
+    "value": 1e+270003
+  },
+  {
+    "id": "centimillillion",
+    "name": "Centimillillion",
+    "shortcut": "CeMi",
+    "exponent": 300003,
+    "display": "10^300003",
+    "value": 1e+300003
+  },
+  {
+    "id": "ducentimillillion",
+    "name": "Ducentimillillion",
+    "shortcut": "DuMi",
+    "exponent": 600003,
+    "display": "10^600003",
+    "value": 1e+60003
+  },
+  {
+    "id": "trucentimillillion",
+    "name": "Trucentimillillion",
+    "shortcut": "TrMi",
+    "exponent": 900003,
+    "display": "10^900003",
+    "value": 1e+900003
+  },
+  {
+    "id": "quadringentimillillion",
+    "name": "Quadringentimillillion",
+    "shortcut": "QaMi",
+    "exponent": 1200003,
+    "display": "10^1200003",
+    "value": 1e+1200003
+  },
+  {
+    "id": "quingentimillillion",
+    "name": "Quingentimillillion",
+    "shortcut": "QiMi",
+    "exponent": 1500003,
+    "display": "10^1500003",
+    "value": 1e+1500003
+  },
+  {
+    "id": "sescentimillillion",
+    "name": "Sescentimillillion",
+    "shortcut": "SeMi",
+    "exponent": 1800003,
+    "display": "10^1800003",
+    "value": 1e+1800003
+  },
+  {
+    "id": "septingentimillillion",
+    "name": "Septingentimillillion",
+    "shortcut": "SiMi",
+    "exponent": 2100003,
+    "display": "10^2100003",
+    "value": 1e+2100003
+  },
+  {
+    "id": "octingentimillillion",
+    "name": "Octingentimillillion",
+    "shortcut": "OtMi",
+    "exponent": 2400003,
+    "display": "10^2400003",
+    "value": 1e+2400003
+  },
+  {
+    "id": "nongentimillillion",
+    "name": "Nongentimillillion",
+    "shortcut": "NiMi",
+    "exponent": 2700003,
+    "display": "10^2700003",
+    "value": 1e+2700003
+  },
+  {
+    "id": "micrillion",
+    "name": "Micrillion",
+    "shortcut": "Mc",
+    "exponent": 3000003,
+    "display": "10^3000003",
+    "value": 1e+3000003
+  },
+  {
+    "id": "decimicrillion",
+    "name": "Decimicrillion",
+    "shortcut": "DeMc",
+    "exponent": 30000003,
+    "display": "10^30000003",
+    "value": 1e+30000003
+  },
+  {
+    "id": "centimicrillion",
+    "name": "Centimicrillion",
+    "shortcut": "CeMc",
+    "exponent": 300000003,
+    "display": "10^300000003",
+    "value": 1e+300000003
+  },
+  {
+    "id": "nanillion",
+    "name": "Nanillion",
+    "shortcut": "Na",
+    "exponent": 3000000003,
+    "display": "10^3000000003",
+    "value": 1e+3000000003
+  },
+  {
+    "id": "decinanillion",
+    "name": "Decinanillion",
+    "shortcut": "DeNa",
+    "exponent": 30000000003,
+    "display": "10^30000000003",
+    "value": 30000000003
+  },
+  {
+    "id": "centinanillion",
+    "name": "Centinanillion",
+    "shortcut": "CeNa",
+    "exponent": 300000000003,
+    "display": "10^300000000003",
+    "value": 1e+300000000003
+  },
+  {
+    "id": "picillion",
+    "name": "Picillion",
+    "shortcut": "Pi",
+    "exponent": 3000000000003,
+    "display": "10^3000000000003",
+    "value": 1e+3000000000003
+  },
+  {
+    "id": "decipicillion",
+    "name": "Decipicillion",
+    "shortcut": "DePi",
+    "exponent": 30000000000003,
+    "display": "10^30000000000003",
+    "value": 1e+30000000000003
+  },
+  {
+    "id": "centipicillion",
+    "name": "Centipicillion",
+    "shortcut": "CePi",
+    "exponent": 300000000000003,
+    "display": "10^300000000000003",
+    "value": 1e+300000000000003
+  }
+]
