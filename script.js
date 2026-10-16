@@ -91,14 +91,29 @@ let toastTimer;
 function fmt(value, forceScientific = false) {
   const n = BN.from(value);
   if (!n.m) return "0";
-  if (n.e < 15 && !forceScientific) {
-    const ordinary = n.m * Math.pow(10, n.e);
-    if (state.compact && ordinary >= 1000) {
-      const suffixes = [["K",3],["M",6],["B",9],["T",12]];
-      for (let i = suffixes.length - 1; i >= 0; i--) if (n.e >= suffixes[i][1]) return (ordinary / Math.pow(10, suffixes[i][1])).toFixed(2).replace(/\.?0+$/, "") + suffixes[i][0];
+
+  // Compact mode uses familiar short-scale suffixes, including quadrillion and beyond.
+  if (state.compact && !forceScientific && n.e >= 3 && n.e < 36) {
+    const suffixes = ["", "K", "M", "B", "T", "Qa", "Qi", "Sx", "Sp", "Oc", "No", "Dc"];
+    const tier = Math.floor(n.e / 3);
+    if (tier > 0 && tier < suffixes.length) {
+      const scaled = n.m * Math.pow(10, n.e - tier * 3);
+      return scaled.toFixed(2).replace(/\.?0+$/, "") + suffixes[tier];
     }
-    return Math.floor(ordinary).toLocaleString("en-US");
   }
+
+  // Full notation for manageable exponents. Split very long numbers into rows of
+  // ten comma-separated digit groups so the display stays readable.
+  if (!forceScientific && n.e <= 300) {
+    const significant = n.m.toPrecision(15).replace(".", "").replace(/e.*$/i, "");
+    const digits = (significant + "0".repeat(Math.max(0, n.e + 1 - significant.length))).slice(0, n.e + 1);
+    const groups = [];
+    for (let i = digits.length; i > 0; i -= 3) groups.unshift(digits.slice(Math.max(0, i - 3), i));
+    const rows = [];
+    for (let i = 0; i < groups.length; i += 10) rows.push(groups.slice(i, i + 10).join(","));
+    return rows.join("\n");
+  }
+
   const superscript = String(n.e).replace(/[0-9-]/g, d => ({"0":"⁰","1":"¹","2":"²","3":"³","4":"⁴","5":"⁵","6":"⁶","7":"⁷","8":"⁸","9":"⁹","-":"⁻"})[d]);
   if (Math.abs(n.m - 1) < 0.005) return "10" + superscript;
   return n.m.toFixed(2).replace(/\.?0+$/, "") + " × 10" + superscript;
