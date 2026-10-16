@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beyond Infinity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-symbol">∞</span><span>BEYOND <b>INFINITY</b><small>AN INCREMENTAL JOURNEY</small></span></a>
+    <nav><button class="quiet-button" id="save-button">Save</button><button class="quiet-button" id="settings-button">Settings</button></nav>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar" aria-label="Game navigation">
+      <div class="sidebar-label">YOUR UNIVERSE</div>
+      <button class="side-link active" data-target="game-section"><span class="side-icon">⌂</span><span>Game</span><i class="nav-dot" id="dot-game"></i></button>
+      <button class="side-link" data-target="generators-section"><span class="side-icon">⚙</span><span>Generators</span><i class="nav-dot" id="dot-generators"></i></button>
+      <button class="side-link" data-target="universe-section"><span class="side-icon">◈</span><span>Your universe</span><i class="nav-dot" id="dot-universe"></i></button>
+      <button class="side-link" data-target="upgrades-section"><span class="side-icon">✧</span><span>Upgrades</span><i class="nav-dot" id="dot-upgrades"></i></button>
+      <button class="side-link" data-target="index-section"><span class="side-icon">⌁</span><span>Index</span><i class="nav-dot" id="dot-index"></i></button>
+      <button class="side-link" data-target="achievements-section"><span class="side-icon">★</span><span>Achievements</span><i class="nav-dot" id="dot-achievements"></i></button>
+      <div class="sidebar-bottom"><span class="sidebar-orb">∞</span><span><strong>Beyond Infinity</strong><small>Keep growing.</small></span></div>
+    </aside>
+    <section class="panel hero" id="game-section">
+      <div class="eyebrow"><span class="live-dot"></span> YOUR UNIVERSE IS GROWING</div>
+      <div class="currency-label">INFINITY POINTS</div>
+      <div class="big-number" id="points">0</div>
+      <div class="production-line"><span class="production-dot"></span><span id="production">+0 / second</span></div>
+      <div class="progress-wrap">
+        <div class="progress-label"><span id="milestone-label">First steps</span><span id="milestone-progress">0%</span></div>
+        <div class="progress-track"><div id="milestone-bar"></div></div>
+      </div>
+      <button class="generate-button" id="generate-button"><span class="button-icon">✦</span><span>GENERATE POINTS<small id="click-value">+1 per click</small></span><span class="button-arrow">↗</span></button>
+      <div class="hero-foot"><span>✧ Every point matters.</span><span id="save-status">Autosaving enabled</span></div>
+    </section>
+
+    <section class="panel stats-panel" id="universe-section">
+      <div class="section-heading"><div><div class="eyebrow">AT A GLANCE</div><h2>Your universe</h2></div><span class="heading-icon">◈</span></div>
+      <div class="stats-grid">
+        <div class="stat-card"><span>Total generated</span><strong id="total-earned">0</strong></div>
+        <div class="stat-card"><span>Generators owned</span><strong id="generator-count">0</strong></div>
+        <div class="stat-card"><span>Lifetime points</span><strong id="lifetime-points">0</strong></div>
+        <div class="stat-card"><span>Infinity shards</span><strong id="shards">0</strong></div>
+      </div>
+    </section>
+
+    <section class="panel" id="generators-section">
+      <div class="section-heading"><div><div class="eyebrow">AUTOMATED PRODUCTION</div><h2>Generators</h2><p class="section-desc">Start with sparks, scale into engines beyond infinity, and unlock unique perks by owning 100 of any generator.</p></div><span class="heading-icon">⚙</span></div>
+      <div id="generator-list" class="item-list"></div>
+    </section>
+
+    <section class="panel" id="upgrades-section">
+      <div class="section-heading"><div><div class="eyebrow">MAKE EVERY POINT COUNT</div><h2>Upgrades</h2><p class="section-desc">Permanent boosts for clicks, individual machines, and your entire production network.</p></div><span class="heading-icon">✧</span></div>
+      <div id="upgrade-list" class="item-list"></div>
+    </section>
+
+    <section class="panel" id="prestige-section" data-page="universe-section">
+      <div class="section-heading"><div><div class="eyebrow">A NEW BEGINNING</div><h2>Break the universe</h2><p class="section-desc">Prestige resets your points and generators, but awards permanent Infinity Shards.</p></div><span class="heading-icon">✺</span></div>
+      <div class="prestige-content"><div class="prestige-orb">∞</div><div class="prestige-copy"><strong id="prestige-reward">Not yet available</strong><p id="prestige-description">Reach 1 trillion lifetime points to unlock your first reset.</p><button id="prestige-button" class="secondary-button" disabled>PRESTIGE</button></div></div>
+    </section>
+
+    <section class="panel" id="index-section">
+      <div class="section-heading"><div><div class="eyebrow">THE ROAD AHEAD</div><h2>Number index</h2><p class="section-desc">Discover named numbers as your universe grows.</p></div><span class="heading-icon">⌁</span></div>
+      <div id="number-list" class="number-list"></div>
+      <p class="source-note">Reference list: names, shortcuts and exponents from the supplied Large Numbers List.</p>
+    </section>
+    <section class="panel" id="achievements-section">
+      <div class="section-heading"><div><div class="eyebrow">MILESTONES, SECRETS & BRAGGING RIGHTS</div><h2>Achievements</h2><p class="section-desc">A growing collection of goals for clicks, production, generators, upgrades, prestige, and discoveries. Some are secret.</p></div><span class="heading-icon">★</span></div>
+      <div class="achievement-summary"><strong id="achievement-count">0 / 36 unlocked</strong><div class="achievement-progress-track"><div id="achievement-progress"></div></div></div>
+      <div id="achievement-list" class="achievement-list"></div>
+    </section>
+    <footer><span>BEYOND INFINITY</span><span>Keep going. There is always a bigger number.</span><button id="reset-button" class="text-button">Reset save</button></footer>
+  </main>
+
+  <dialog id="settings-dialog"><form method="dialog" class="dialog-inner">
+    <div class="section-heading"><div><div class="eyebrow">PERSONALISE YOUR RUN</div><h2>Settings</h2></div><button class="close-button" aria-label="Close settings">×</button></div>
+    <label class="toggle-row"><span><strong>Compact numbers</strong><small>Use short labels such as 1.2M instead of full numbers.</small></span><input type="checkbox" id="compact-toggle"></label>
+    <label class="toggle-row"><span><strong>Fast number updates</strong><small>Refresh your points and production about every 50 milliseconds instead of every 250 milliseconds.</small></span><input type="checkbox" id="fast-updates-toggle"></label>
+    <label class="toggle-row"><span><strong>Confirm prestige</strong><small>Ask before resetting your current run.</small></span><input type="checkbox" id="confirm-toggle" checked></label>
+    <button class="secondary-button full-button">DONE</button>
+  </form></dialog>
+  <dialog id="reset-dialog"><form method="dialog" class="dialog-inner">
+    <div class="section-heading"><div><div class="eyebrow">ARE YOU SURE?</div><h2>Reset your universe?</h2></div><button class="close-button" aria-label="Close">×</button></div>
+    <p class="section-desc">This deletes your local save and starts Beyond Infinity from scratch. This cannot be undone.</p>
+    <div class="dialog-actions"><button class="quiet-button">Cancel</button><button class="danger-button" id="confirm-reset" value="reset">Delete save</button></div>
+  </form></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
